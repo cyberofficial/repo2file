@@ -13,6 +13,11 @@ The File Content Extraction Tool allows you to extract the contents of multiple 
 - File Content Preview: View the content of any selected file within the tool.
 - Output File Generation: Create a single text file containing the contents of all selected files, along with their original file paths.
 
+# Video
+https://github.com/cyberofficial/repo2file/assets/19499442/4d383c36-2fb1-4fbf-b752-558536f45f02
+
+
+
 # Planned Features
 * Better Download button. (Needs to be fixed.)
 * (￣﹏￣；) Give me ideas
