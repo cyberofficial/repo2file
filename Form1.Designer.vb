@@ -100,14 +100,14 @@ Partial Class Form1
         FileExtList.Location = New Point(13, 174)
         FileExtList.MultiColumn = True
         FileExtList.Name = "FileExtList"
-        FileExtList.Size = New Size(420, 220)
+        FileExtList.Size = New Size(420, 256)
         FileExtList.Sorted = True
         FileExtList.TabIndex = 7
         ' 
         ' SaveBtn
         ' 
         SaveBtn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        SaveBtn.Location = New Point(1096, 867)
+        SaveBtn.Location = New Point(638, 42)
         SaveBtn.Name = "SaveBtn"
         SaveBtn.Size = New Size(75, 23)
         SaveBtn.TabIndex = 8
@@ -121,7 +121,7 @@ Partial Class Form1
         FileListBox.HorizontalScrollbar = True
         FileListBox.Location = New Point(13, 469)
         FileListBox.Name = "FileListBox"
-        FileListBox.Size = New Size(700, 382)
+        FileListBox.Size = New Size(700, 418)
         FileListBox.TabIndex = 9
         ' 
         ' Label2
@@ -156,7 +156,7 @@ Partial Class Form1
         ' FilterFiles_EXT
         ' 
         FilterFiles_EXT.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
-        FilterFiles_EXT.Location = New Point(13, 861)
+        FilterFiles_EXT.Location = New Point(272, 440)
         FilterFiles_EXT.Name = "FilterFiles_EXT"
         FilterFiles_EXT.Size = New Size(161, 23)
         FilterFiles_EXT.TabIndex = 12
@@ -166,7 +166,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(13, 397)
+        Label3.Location = New Point(13, 436)
         Label3.Name = "Label3"
         Label3.Size = New Size(34, 15)
         Label3.TabIndex = 14
@@ -175,7 +175,7 @@ Partial Class Form1
         ' InfoText
         ' 
         InfoText.AutoSize = True
-        InfoText.Location = New Point(53, 397)
+        InfoText.Location = New Point(53, 436)
         InfoText.Name = "InfoText"
         InfoText.Size = New Size(22, 15)
         InfoText.TabIndex = 14
@@ -207,7 +207,7 @@ Partial Class Form1
         FilePreview.Location = New Point(719, 469)
         FilePreview.Name = "FilePreview"
         FilePreview.ReadOnly = True
-        FilePreview.Size = New Size(447, 386)
+        FilePreview.Size = New Size(447, 418)
         FilePreview.TabIndex = 19
         FilePreview.Text = ""
         ' 
