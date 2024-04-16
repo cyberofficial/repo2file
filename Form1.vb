@@ -241,63 +241,6 @@ Public Class Form1
         InfoText.Text = $"Reduced to {FileListBox.Items.Count} files."
     End Sub
 
-    Private Sub DL_GH_REPO_Click(sender As Object, e As EventArgs) Handles DL_GH_REPO.Click
-        ' Check if URL_txtbox is not empty
-        If Not String.IsNullOrEmpty(URL_txtbox.Text) Then
-            ' Get the URL from the textbox
-            Dim url As String = URL_txtbox.Text.Trim()
-
-            ' Check if the URL is a GitHub repository
-            If url.StartsWith("https://github.com/") Then
-                ' Extract the repository name
-                Dim repoName As String = url.Split("/"c).Last()
-
-                ' Check if the URL ends with "tree/"
-                If url.EndsWith("tree/") Then
-                    ' Append "master" to the URL
-                    url &= "master"
-                End If
-
-                ' Convert the URL to the archive URL
-                Dim archiveUrl As String = url.Replace("/tree/", "/archive/refs/heads/") & ".zip"
-
-                ' Get the directory path where the zip file will be saved
-                Dim zipDirectory As String = Path.Combine(Application.StartupPath, "repos")
-
-                ' Create the directory if it doesn't exist
-                If Not Directory.Exists(zipDirectory) Then
-                    Directory.CreateDirectory(zipDirectory)
-                End If
-
-                ' Specify the path for saving the zip file
-                Dim zipFileName As String = Path.Combine(zipDirectory, $"{repoName}.zip")
-
-                ' Download the zip file
-                Try
-                    Dim client As New WebClient()
-                    client.DownloadFile(archiveUrl, zipFileName)
-
-                    ' Extract the zip file
-                    Dim extractPath As String = Path.Combine(Application.StartupPath, "repos", repoName & "-master")
-                    ZipFile.ExtractToDirectory(zipFileName, extractPath)
-
-                    ' Set the FileInputFolder to the extracted folder
-                    FileInputFolder.Text = extractPath
-                    SaveFileName.Text = extractPath & "\repo.txt"
-
-                    ' Inform the user about the successful download and extraction
-                    MessageBox.Show("GitHub repository downloaded and extracted successfully.")
-                Catch ex As Exception
-                    MessageBox.Show($"An error occurred while downloading or extracting the GitHub repository: {ex.Message}")
-                End Try
-            Else
-                MessageBox.Show("Invalid GitHub repository URL.")
-            End If
-        Else
-            MessageBox.Show("Please enter a GitHub repository URL.")
-        End If
-    End Sub
-
     Private Sub FileListBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles FileListBox.SelectedIndexChanged
         ' Check if any item is selected in the FileListBox
         If FileListBox.SelectedIndex <> -1 Then

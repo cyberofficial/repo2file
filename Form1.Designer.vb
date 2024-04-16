@@ -40,8 +40,6 @@ Partial Class Form1
         InfoText = New Label()
         FolderListBox = New CheckedListBox()
         Label4 = New Label()
-        DL_GH_REPO = New Button()
-        URL_txtbox = New TextBox()
         FilePreview = New RichTextBox()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -203,22 +201,6 @@ Partial Class Form1
         Label4.TabIndex = 16
         Label4.Text = "Check folders you want to remove"
         ' 
-        ' DL_GH_REPO
-        ' 
-        DL_GH_REPO.Location = New Point(13, 70)
-        DL_GH_REPO.Name = "DL_GH_REPO"
-        DL_GH_REPO.Size = New Size(97, 23)
-        DL_GH_REPO.TabIndex = 17
-        DL_GH_REPO.Text = "DL+Load"
-        DL_GH_REPO.UseVisualStyleBackColor = True
-        ' 
-        ' URL_txtbox
-        ' 
-        URL_txtbox.Location = New Point(116, 70)
-        URL_txtbox.Name = "URL_txtbox"
-        URL_txtbox.Size = New Size(317, 23)
-        URL_txtbox.TabIndex = 18
-        ' 
         ' FilePreview
         ' 
         FilePreview.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
@@ -235,8 +217,6 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1178, 902)
         Controls.Add(FilePreview)
-        Controls.Add(URL_txtbox)
-        Controls.Add(DL_GH_REPO)
         Controls.Add(Label4)
         Controls.Add(FolderListBox)
         Controls.Add(FilterFiles_EXT)
@@ -281,8 +261,6 @@ Partial Class Form1
     Friend WithEvents InfoText As Label
     Friend WithEvents FolderListBox As CheckedListBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents DL_GH_REPO As Button
-    Friend WithEvents URL_txtbox As TextBox
     Friend WithEvents FilePreview As RichTextBox
 
 End Class
