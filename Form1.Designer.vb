@@ -57,6 +57,7 @@ Partial Class Form1
         ' 
         FileInputFolder.Location = New Point(116, 12)
         FileInputFolder.Name = "FileInputFolder"
+        FileInputFolder.PlaceholderText = "C:\some\folder\"
         FileInputFolder.Size = New Size(516, 23)
         FileInputFolder.TabIndex = 1
         ' 
@@ -73,6 +74,7 @@ Partial Class Form1
         ' 
         SaveFileName.Location = New Point(116, 41)
         SaveFileName.Name = "SaveFileName"
+        SaveFileName.PlaceholderText = "C:\some\folder\repo.txt"
         SaveFileName.Size = New Size(516, 23)
         SaveFileName.TabIndex = 1
         ' 
@@ -88,7 +90,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(12, 156)
+        Label1.Location = New Point(13, 67)
         Label1.Name = "Label1"
         Label1.Size = New Size(270, 15)
         Label1.TabIndex = 5
@@ -97,16 +99,15 @@ Partial Class Form1
         ' FileExtList
         ' 
         FileExtList.FormattingEnabled = True
-        FileExtList.Location = New Point(13, 174)
+        FileExtList.Location = New Point(13, 84)
         FileExtList.MultiColumn = True
         FileExtList.Name = "FileExtList"
-        FileExtList.Size = New Size(420, 256)
+        FileExtList.Size = New Size(420, 346)
         FileExtList.Sorted = True
         FileExtList.TabIndex = 7
         ' 
         ' SaveBtn
         ' 
-        SaveBtn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
         SaveBtn.Location = New Point(638, 42)
         SaveBtn.Name = "SaveBtn"
         SaveBtn.Size = New Size(75, 23)
@@ -121,7 +122,7 @@ Partial Class Form1
         FileListBox.HorizontalScrollbar = True
         FileListBox.Location = New Point(13, 469)
         FileListBox.Name = "FileListBox"
-        FileListBox.Size = New Size(700, 418)
+        FileListBox.Size = New Size(619, 418)
         FileListBox.TabIndex = 9
         ' 
         ' Label2
@@ -136,9 +137,9 @@ Partial Class Form1
         ' GroupBox1
         ' 
         GroupBox1.Controls.Add(SkipBinaryFileTypes)
-        GroupBox1.Location = New Point(439, 71)
+        GroupBox1.Location = New Point(719, 11)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(270, 100)
+        GroupBox1.Size = New Size(126, 48)
         GroupBox1.TabIndex = 11
         GroupBox1.TabStop = False
         GroupBox1.Text = "Search Params"
@@ -155,7 +156,6 @@ Partial Class Form1
         ' 
         ' FilterFiles_EXT
         ' 
-        FilterFiles_EXT.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         FilterFiles_EXT.Location = New Point(272, 440)
         FilterFiles_EXT.Name = "FilterFiles_EXT"
         FilterFiles_EXT.Size = New Size(161, 23)
@@ -186,28 +186,28 @@ Partial Class Form1
         FolderListBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         FolderListBox.FormattingEnabled = True
         FolderListBox.HorizontalScrollbar = True
-        FolderListBox.Location = New Point(439, 192)
+        FolderListBox.Location = New Point(439, 84)
         FolderListBox.Name = "FolderListBox"
-        FolderListBox.Size = New Size(733, 274)
+        FolderListBox.Size = New Size(733, 382)
         FolderListBox.Sorted = True
         FolderListBox.TabIndex = 15
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(439, 174)
+        Label4.Location = New Point(444, 67)
         Label4.Name = "Label4"
-        Label4.Size = New Size(188, 15)
+        Label4.Size = New Size(191, 15)
         Label4.TabIndex = 16
-        Label4.Text = "Check folders you want to remove"
+        Label4.Text = "Check folders you want to remove."
         ' 
         ' FilePreview
         ' 
         FilePreview.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        FilePreview.Location = New Point(719, 469)
+        FilePreview.Location = New Point(638, 469)
         FilePreview.Name = "FilePreview"
         FilePreview.ReadOnly = True
-        FilePreview.Size = New Size(447, 418)
+        FilePreview.Size = New Size(528, 418)
         FilePreview.TabIndex = 19
         FilePreview.Text = ""
         ' 
@@ -236,7 +236,7 @@ Partial Class Form1
         MinimumSize = New Size(1194, 941)
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form1"
+        Text = "Repo 2 Text"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         ResumeLayout(False)
