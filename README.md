@@ -13,6 +13,10 @@ The File Content Extraction Tool allows you to extract the contents of multiple 
 - File Content Preview: View the content of any selected file within the tool.
 - Output File Generation: Create a single text file containing the contents of all selected files, along with their original file paths.
 
+# Planned Features
+* Better Download button. (Needs to be fixed.)
+* (￣﹏￣；) Give me ideas
+
 # Usage
 1. Select Folder: Click the "Open Folder" button and choose the directory containing the repo file or folder you wish to compact into a files.
 2. Scan Files: Click the "Scan" button to populate the lists of folders, files, and file extensions.
